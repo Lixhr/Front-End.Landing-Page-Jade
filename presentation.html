@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Accueil</title>
+    <link href="style.css" rel="stylesheet" >
+    <link href="transitions.css" rel="stylesheet" >
+    <link href="https://fonts.cdnfonts.com/css/century-gothic" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>   
+</head>
+<body class="bodyPres">
+
+    <div class="transition transition-2 is-active"></div>
+
+
+    <header>
+
+        <nav>
+
+ 
+            <div class="nav"> 
+                <img src="photos/icones/signature.png" class="sign"> 
+                <a class="a1920" href="index.html">Accueil</a>
+                <a class="a1920" href="presentation.html">Présentation</a>
+                <a class="a1920" href="gallerie.html">Gallerie</a>
+                <a class="a1920" href="contact.html">Contact</a>
+            </div>     
+
+            <div class="icones"> 
+                <a href="index.html"><img class="home" src="icones/home.svg" /></a>
+                <a href="presentation.html"><img class="pres" src="icones/pres.svg" /></a>
+                <a href="index.html"><img class="gallerie" src="icones/gallerie.svg" /></a>
+                <a href="index.html"><img class="contact" src="icones/contact.svg" /></a>
+
+            </div> 
+    
+
+        </nav>
+        
+ 
+
+
+
+
+  
+
+
+   
+
+
+     
+
+
+
+    </header>
+
+
+    <main>  
+
+
+        <section class="presgg">
+            
+            
+            <div class="blocPres">
+            <img class="imgJade" src="photos/imgJade.png" alt="photo argentique1"  >
+
+            
+            
+            
+            <div class="container">
+                <div class="texte1920" id="text" >
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum varius neque pharetra leo pretium, eget venenatis nisl porttitor. Quisque accumsan neque sed metus rutrum, at tincidunt ex pulvinar. Aliquam sodales, velit nec volutpat consectetur, ante magna aliquet augue, eget pulvinar nisl enim non nibh. Phasellus sit amet semper ipsum, ac porta lectus. Mauris ultrices tempus ultrices. Nam rhoncus vitae metus at feugiat. Donec et tristique turpis. Nulla in nunc at est imperdiet tincidunt. Nulla posuere ipsum in pharetra rhoncus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+<br/>Donec auctor nisl orci, ut luctus dolor euismod sed. Suspendisse blandit enim quis scelerisque mollis. Donec nec velit a sem imperdiet imperdiet eu at sem. Phasellus eleifend neque id mauris aliquet, at maximus velit lobortis. Vivamus eget orci placerat, condimentum massa quis, sodales ante. Mauris sodales lectus nec nisl lobortis, non vulputate nunc cursus. Interdum et malesuada fames ac ante ipsum primis in faucibus. In hac habitasse platea dictumst. Pellentesque volutpat justo vel mauris mattis imperdiet. Suspendisse faucibus sit amet dolor id ultricies. 
+                </div>
+                
+              </div>
+        </section>
+    </main>
+
+
+
+    <script type="text/javascript">
+
+var text = document.getElementById('text');
+
+  var splitText = text.innerText.split('');
+  
+ text.innerHTML = '';
+ 
+  i = 0
+  setInterval(function(){
+    AjoutDeLettre()}
+    , 0)
+
+function AjoutDeLettre(){
+  if(i < splitText.length){
+    text.innerHTML += splitText[i];
+    i++;
+  }
+}
+    </script>
+
+    <script src="transi.js"></script>
+</body>
+
+<footer>
+    <div class="iconesfoot"> 
+
+
+        <img src="photos/icones/signature.png" class="signfoot">
+        <a  href="index.html" class="blocinsta"><img class="insta" src="icones/insta.svg" /></a>
+    <a href="" class="atel"><h3>@jaaadebeaufils</h3></a>
+    </div> 
+</footer>
+
+
+
+
+    <script type="text/javascript">
+
+
+
+
+
+
+        let animation3 = anime({ 
+            delay:19000, 
+            targets: '.iconesfoot',
+            easing: 'easeOutQuad',
+            translateX:[2000, 0],
+            duration:1000,
+        
+        })
+
+        
+ 
+        let animation5 = anime({  
+
+            targets: ['.a1920', '.sign', 'h1'],
+            opacity:[0,100],
+            duration:1000,
+        
+        })
+
+
+        
+
+
+        
+ 
+
+
+        let animation9 = anime({  
+            delay:300   ,
+            targets: ['.container', '.imgJade'],
+            easing: 'easeOutElastic(1, 2)',
+            opacity: [0, 100],
+            translateX:[1500,0],
+            translateY:[500,0],
+            opacity:['0%', '100%'],
+            duration:1800,
+
+        })   
+
+
+        
+    </script>
+
+
+</html>

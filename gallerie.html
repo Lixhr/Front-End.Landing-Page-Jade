@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Accueil</title>
+    <link href="style.css" rel="stylesheet" >
+    <link href="transitions.css" rel="stylesheet" >
+    <link href="https://fonts.cdnfonts.com/css/century-gothic" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>   
+</head>
+
+<header>
+
+    <nav>
+
+
+        <div class="nav"> 
+            <img src="photos/icones/signature.png" class="sign"> 
+            <a class="a1920" href="index.html">Accueil</a>
+            <a class="a1920" href="presentation.html">Présentation</a>
+            <a class="a1920" href="gallerie.html">Gallerie</a>
+            <a class="a1920" href="contact.html">Contact</a>
+        </div>     
+
+        <div class="icones"> 
+            <a href="#index.html"><img href="index.html" class="home" src="icones/home.svg" /></a>
+            <a href="presentation.html"><img class="pres" src="icones/pres.svg" /></a>
+            <a href="index.html"><img class="gallerie" src="icones/gallerie.svg" /></a>
+            <a href="index.html"><img class="contact" src="icones/contact.svg" /></a>
+
+        </div> 
+
+
+    </nav>
+    
+
+
+</header>
+<body class="bodyGallerie">
+
+    <div class="transition transition-1 is-active"></div>
+
+
+    
+
+
+    <main>  
+        
+        <h4 class="textGallerie">Pour une meilleure expérience, cliquez sur les images!</h4>
+        <div class="gallerie"> 
+
+            <figure class="gallery__item gallery__item--11">
+            <img class="gallery__img" src="photos/gallerie/image00011.jpeg" >
+            </figure>
+
+            <figure class="gallery__item gallery__item--14">
+            <img class="gallery__img" src="photos/gallerie/image00014.jpeg" >
+            </figure>
+
+            <figure class="gallery__item gallery__item--15">
+            <img class="gallery__img" src="photos/gallerie/image00015.jpeg" >
+            </figure>
+
+            <figure class="gallery__item gallery__item--4">
+            <img class="gallery__img" src="photos/gallerie/image00004.jpeg" >
+            </figure>
+
+            <figure class="gallery__item gallery__item--5">
+            <img class="gallery__img" src="photos/gallerie/image00005.jpeg" >
+            </figure>
+
+            <figure class="gallery__item gallery__item--6">
+            <img class="gallery__img" src="photos/gallerie/image00006.jpeg" >
+            </figure>
+
+            <figure class="gallery__item gallery__item--7">
+            <img class="gallery__img" src="photos/gallerie/image00007.jpeg" >
+            </figure>
+
+            <figure class="gallery__item gallery__item--8">
+            <img class="gallery__img" src="photos/gallerie/image00008.jpeg" >
+            </figure>
+
+            <figure class="gallery__item gallery__item--9">
+            <img class="gallery__img" src="photos/gallerie/image00009.jpeg" >
+            </figure>
+
+            <figure class="gallery__item gallery__item--10">
+            <img class="gallery__img" src="photos/gallerie/image00010.jpeg" >
+            </figure>
+
+            <figure class="gallery__item gallery__item--11">
+            <img class="gallery__img" src="photos/gallerie/image00011.jpeg" >
+            </figure>
+
+            <figure class="gallery__item gallery__item--12">
+            <img class="gallery__img" src="photos/gallerie/image00012.jpeg" >
+            </figure>
+
+            <figure class="gallery__item gallery__item--13">
+            <img class="gallery__img" src="photos/gallerie/image00013.jpeg" >
+            </figure>
+
+            <figure class="gallery__item gallery__item--14">
+            <img class="gallery__img" src="photos/gallerie/image00014.jpeg" >
+            </figure>
+
+            <figure class="gallery__item gallery__item--15">
+            <img class="gallery__img" src="photos/gallerie/image00015.jpeg" >
+            </figure>
+
+
+
+        </div>
+    </main>
+
+
+
+    <script src="transi.js"></script>
+</body>
+<footer>
+    <div class="iconesfoot"> 
+
+
+        <img src="photos/icones/signature.png" class="signfoot">
+        <a  href="index.html" class="blocinsta"><img class="insta" src="icones/insta.svg" /></a>
+    <a href="" class="atel"><h3>@jaaadebeaufils</h3></a>
+    </div> 
+</footer>
+
+
+
+    <script type="text/javascript">
+
+
+     
+
+
+
+
+        let animation3 = anime({ 
+            delay:300, 
+            targets: '.iconesfoot',
+            easing: 'easeOutQuad',
+            translateY:[100, 0],
+            duration:800,
+        
+        })
+
+       
+
+
+        let animation8 = anime({  
+            delay:1900,
+            targets: ['h4'],
+            easing: 'easeOutElastic(1, .8)',
+            opacity:['0%', '100%'],
+            translateX:[-30,0],
+            duration: 1000,
+        
+        })
+        
+
+        let animation6 = anime({  
+            delay:1200,
+            targets: 'h1',
+            easing: 'easeOutElastic(1, .8)',
+           
+            duration:900,
+
+        })
+
+    </script>
+      
+</html>
